@@ -1,28 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 38, in script
-    $ name = input("이름을 입력하세요")
-  File "game/script.rpy", line 38, in <module>
-    $ name = input("이름을 입력하세요")
-Exception: The Python input and raw_input functions do not work with Ren'Py. Please use the renpy.input function instead.
+  File "game/script.rpy", line 37, in script
+    scene girl_image[0]:
+IndexError: tuple index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 38, in script
-    $ name = input("이름을 입력하세요")
-  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 38, in <module>
-    $ name = input("이름을 입력하세요")
-  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\minstore.py", line 153, in input
-    raise Exception("The Python input and raw_input functions do not work with Ren'Py. Please use the renpy.input function instead.")
-Exception: The Python input and raw_input functions do not work with Ren'Py. Please use the renpy.input function instead.
+  File "game/script.rpy", line 37, in script
+    scene girl_image[0]:
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1562, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\display\image.py", line 409, in find_target
+    error("Image '%s' not found." % ' '.join(self.name))
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\display\image.py", line 390, in error
+    self.target = renpy.text.text.Text(msg, color=(255, 0, 0, 255), xanchor=0, xpos=0, yanchor=0, ypos=0)
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\text\text.py", line 1633, in __init__
+    self.set_text(text, scope, substitute) # type: ignore
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\text\text.py", line 1763, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute) # type: ignore
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 225, in get_value
+IndexError: tuple index out of range
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 StreetLight 1.0
-Thu Nov 16 03:06:38 2023
+Fri Nov 17 01:20:18 2023

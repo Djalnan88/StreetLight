@@ -4,7 +4,12 @@ init python:
 
 # image 문을 사용해 이미지를 정의합니다.
 # image eileen happy = "eileen_happy.png"
+image streetlight = "images/streetlight.jpg"
+image girl cry = "images/girlcry.jpg"
+define girl_image = ["images/girlsmile.jpg","images/girlsmile1.jpg","images/girlsmile2.jpg","images/girlsmile3.jpg","images/girlsmile4.jpg","images/girlsmile5.jpg","images/girlsmile6.jpg","images/girlsmile7.jpg"]
 
+# scene expression girl_image[0]:
+#     zoom 0.5  화면에 맞추려면 이렇게 써야됨
 
 # 게임에서 사용할 캐릭터를 정의합니다.
 define pimsi = Character('주인공', color="#c8ffc8")
@@ -24,7 +29,7 @@ label start:
 
 label day0:
     centered "프롤로그"
-
+    # 게임 시작 배경
     pimsi "그토록 원했던 D대학교에 입학했어!!"
     pimsi "드디어 마음대로 밤새서 게임도 하고 술도 먹고"
     pimsi "그리고 또..."
@@ -57,10 +62,10 @@ label day0:
     nar "가로등 아래 낯선 여자가 서있다."
     nar "낯선 여자를 본 [p]. 그는 가로등 불빛 아래 그녀에게 다가간다…"
     p "저기... 엇..."
-    # 가로등 배경
+    scene expression girl_image[0]
     # 얼굴이 안보이는 여자 얼굴
     p "(가로등 빛이 너무 빛나서 얼굴이 보이지 않아)"
-    "쿵" vpunch
+    "쿵" with vpunch
     p "으악!"
     himdi "죄송합니다. 괜찮으신가요?"
     "누군가와 부딫힌 [p]는 눈을 떠보니 가로등 빛에 휩싸여 있는 낯선 여자가 보인다."

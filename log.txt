@@ -1,4 +1,4 @@
-Thu Nov 16 03:22:49 2023
+Fri Nov 17 01:20:06 2023
 Windows-10-10.0.22621
 Ren'Py 8.1.3.23091805
  
@@ -10,121 +10,32 @@ Loading error handling. took 0.02s
 Loading script. took 0.24s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-
-File "game/script.rpy", line 31: expected statement.
-    Fade(0.5, 0, 0.5)
-                     ^
-
-File "game/script.rpy", line 49: expected statement.
-    Fade(0.5, 0, 0.5)
-                     ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.45s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.18'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1730, 973) drawable=(1730, 973)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 30.88s
-Early init. took 0.00s
-Loader init. took 0.04s
-Loading error handling. took 0.02s
-Loading script. took 0.11s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 31: expected statement.
-    fade = Fade(0.5, 0, 0.5)
-         ^
-
-File "game/script.rpy", line 49: expected statement.
-    fade = Fade(0.5, 0, 0.5)
-         ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.38s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.18'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1730, 973) drawable=(1730, 973)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 129.55s
-Early init. took 0.00s
-Loader init. took 0.04s
-Loading error handling. took 0.02s
-Loading script. took 0.11s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 49: expected statement.
-    fade = Fade(0.5, 0, 0.5)
-         ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.33s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 531.18'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1730, 973) drawable=(1730, 973)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 142.58s
-Early init. took 0.00s
-Loader init. took 0.04s
-Loading error handling. took 0.01s
-Loading script. took 0.12s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.06s
+Running init code. took 0.05s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jalna\\AppData\\Roaming/RenPy/backups\\StreetLight':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.03s
+Initial gc. took 0.02s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.23s
+Creating interface object. took 0.26s
 Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.06s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.05s
+Interface start. took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -134,32 +45,62 @@ Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 531.18'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1730, 973) drawable=(1730, 973)
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1733, 973) drawable=(1733, 973)
-Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 37, in script
+    scene girl_image[0]:
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1562, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\display\image.py", line 409, in find_target
+    error("Image '%s' not found." % ' '.join(self.name))
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\display\image.py", line 390, in error
+    self.target = renpy.text.text.Text(msg, color=(255, 0, 0, 255), xanchor=0, xpos=0, yanchor=0, ypos=0)
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\text\text.py", line 1633, in __init__
+    self.set_text(text, scope, substitute) # type: ignore
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\text\text.py", line 1763, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute) # type: ignore
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "C:\Users\jalna\OneDrive\바탕 화면\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 225, in get_value
+IndexError: tuple index out of range
+
+While running game code:
+  File "game/script.rpy", line 37, in script
+    scene girl_image[0]:
+IndexError: tuple index out of range
 Resetting cache.
-Bootstrap to the start of init.init. took 173.71s
+Bootstrap to the start of init.init. took 52.06s
 Early init. took 0.00s
 Loader init. took 0.04s
 Loading error handling. took 0.02s
 Loading script. took 0.13s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
+Running init code. took 0.02s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jalna\\AppData\\Roaming/RenPy/backups\\StreetLight':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.05s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.25s
+Creating interface object. took 0.23s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
@@ -181,5 +122,5 @@ Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 531.18'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1729, 972) drawable=(1729, 972)
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
 Maximum texture size: 4096x4096
