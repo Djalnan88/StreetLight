@@ -1,4 +1,7 @@
 ﻿# 이 파일에 게임 스크립트를 입력합니다.
+init python:
+    import eve
+    import random
 
 # image 문을 사용해 이미지를 정의합니다.
 # image eileen happy = "eileen_happy.png"
@@ -43,7 +46,9 @@ label day0:
     # 아주머니 얼굴
     ajm "신분증 좀 보여주세요"
     # 아주머니 얼굴 사라짐
+    # 신분증 사진
     $ player_name = renpy.input("이름을 입력하세요.")
+    # 신분증 사진 사라짐
     # 술집 배경 사라짐
     
     # 밤의 길 배경
@@ -55,14 +60,25 @@ label day0:
     # 가로등 배경
     # 얼굴이 안보이는 여자 얼굴
     p "(가로등 빛이 너무 빛나서 얼굴이 보이지 않아)"
-    himsi "저기... 누구신가요?"
+    "쿵" vpunch
+    p "으악!"
+    himdi "죄송합니다. 괜찮으신가요?"
+    "누군가와 부딫힌 [p]는 눈을 떠보니 가로등 빛에 휩싸여 있는 낯선 여자가 보인다."
+    p "아... 괜찮아요."
+    p "전 신입생 [p]입니다."
+    himsi "안녕하세요. 저는 [h]에요."
+    "너무 밝은 가로등 빛에 [h]의 얼굴이 보이지 않는다."
+    "하지만 [p]는 [h]에게 마음의 끌림을 느낀다."
     # 배경 사라짐
     # 얼굴이 안보이는 여자 얼굴 사라짐
 
     return
 
 label day1:
-
+    centered "day1"
+    p "으윽 머리야..."
+    p "어제는 분명 그녀랑..."
+    p "아 맞다! 수업 가야지!"
     return
 
 label day2:
@@ -86,5 +102,25 @@ label day6:
     return
 
 label day7:
+
+    return
+
+label happy:
+
+    return
+
+label bad:
+    
+    return
+
+label normal1:
+
+    return
+
+label normal2:
+
+    return
+
+label good:
 
     return
